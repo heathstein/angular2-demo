@@ -1,0 +1,45 @@
+<div class="card">
+    <div class="card-content center-align">
+        This is just a test {{anotherValue}}
+    </div>
+
+    <div *ngIf="loading">loading...</div>
+    <table class="table table-responsive table-striped" >
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Powers</th>
+            <th>Age</th>
+            <th>Height</th>
+            <th>Weight</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="#hero of data">
+            <td>{{ hero.id }}</td>
+            <td>{{ hero.name }}</td>
+            <td>{{ hero.powers }}</td>
+            <td>{{ hero.age }}</td>
+            <td>{{ hero.height }}</td>
+            <td>{{ hero.weight }}</td>
+            <td (click)="edit(hero)">edit</td>
+            <td (click)="removeUser(hero)">delete</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div (click)="addUser()" class="btn btn-xs "> Add User</div>
+
+    <div class="products-area">
+       Child Route  <router-outlet></router-outlet>
+    </div>
+
+    <h2>Basic Request</h2>
+    <button type="button"  (click)="makeRequest()">Make Request</button>
+    <div *ngIf="loading">loading...</div>
+    <pre>{{data | json}}</pre>
+
+</div>`

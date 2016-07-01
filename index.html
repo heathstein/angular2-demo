@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Angular 2 - Simple Reddit</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--START: FAVE ICONS -->
+    <!-- For third-generation iPad with high-resolution Retina display:-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"href="assets/favicon/favicon-144px.png">
+    <!-- For iPhone with high-resolution Retina display:-->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"href="assets/favicon/favicon-114px.png">
+    <!-- For first- and second-generation iPad:-->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"href="assets/favicon/favicon-72px.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices:-->
+    <link rel="apple-touch-icon-precomposed"href="assets/favicon/favicon.png">
+    <link rel="icon" href="assets/favicon/favicon.ico">
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+
+    <script src="app/canvas-art/Vector2.js"></script>
+
+
+    <!-- Libraries -->
+    <script src="node_modules/es6-shim/es6-shim.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.js"></script>
+    <script src="node_modules/angular2/bundles/http.js"></script>
+    <script src="node_modules/moment/min/moment.min.js"></script>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ng2-bootstrap/1.0.2-beta.0/ng2-bootstrap.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="resources/vendor/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+  </head>
+  <body>
+
+  <div id="blah"> </div>
+
+   <script>
+     console.log("#blah" ,  $('#blah') );
+   </script>
+
+  <base href="/">
+  <my-app></my-app>
+
+
+    <!-- Configure System.js, our module loader -->
+    <script>
+      System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/app.js')
+            .then(null, console.error.bind(console));
+    </script>
+
+
+
+
+
+
+
+  </body>
+</html>

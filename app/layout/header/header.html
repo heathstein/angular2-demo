@@ -1,0 +1,28 @@
+<div  class="header">
+    <div class="header-container">
+        <div class="logo"></div>
+        <div class="gt-breadcrumb">US <i class="fa fa-chevron-right"></i>Tax Return  <i class="fa fa-chevron-right"></i> Income Tax</div>
+
+        <div class="gt-user-drop btn-group" uib-dropdown  >
+            <div class="gt-user-drop-toggle" id="gt-user-drop" uib-dropdown-toggle>
+                <i class="pull-left fa fa-chevron-down "></i>
+                <div class="pull-left gt-display-name"> <span>user.first_name user.last_name</span> <br /> user.sso_id </div>
+                <div class="gt-avatar pull-right"><img src="settings.avatar_url/60/user.sso_id.jpg"> </div>
+            </div>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="gt-user-drop">
+                <li role="menuitem"><a href="logout">Log Out</a></li>
+                <li role="menuitem"><a  ui-sref="settings" >Lock Screen</a></li>
+                <li role="menuitem"><a ui-sref="settings">My Settings</a></li>
+                <li class="divider"></li>
+                <li role="menuitem"><a ui-sref="admin.system-settings">Admin Settings</a></li>
+            </ul>
+        </div>
+
+
+        <div class="pull-right gt-global-search" click-out="hide()" gt-global-search></div>
+
+        <navigation></navigation>
+
+
+    </div>
+</div>

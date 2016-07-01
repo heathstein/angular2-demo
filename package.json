@@ -1,0 +1,32 @@
+{
+  "name": "ng-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "tsc": "./node_modules/.bin/tsc",
+    "tsc:w": "./node_modules/.bin/tsc -w",
+    "serve": "./node_modules/.bin/live-server --host=localhost --port=8080 .",
+    "go": "concurrent \"npm run tsc:w\" \"npm run serve\" \"npm run watch-less\" ",
+    "build-less": "lessc assets/less/styles.less > assets/css/styles.css",
+    "watch-less": "nodemon --watch assets/less/*.less --ext less --exec npm run build-less"
+
+
+  },
+  "license": "ISC",
+  "dependencies": {
+    "angular2": "2.0.0-beta.0",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.3",
+    "ng2-bootstrap": "^1.0.2-beta.2",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "systemjs": "0.19.6",
+    "zone.js": "0.5.10"
+  },
+  "devDependencies": {
+    "concurrently": "^1.0.0",
+    "less": "^2.6.0",
+    "live-server": "^0.9.0",
+    "nodemon": "^1.0.15"
+  }
+}
